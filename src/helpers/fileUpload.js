@@ -19,11 +19,8 @@
         });
 
 
-        console.log(resp)
         if(!resp.ok) throw new Error('No se pudo subir imagen')
-
             const cloudResp = await resp.json();
-            console.log({cloudResp})
 
             return cloudResp.secure_url
         
